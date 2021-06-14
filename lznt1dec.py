@@ -46,7 +46,7 @@ def decompress(data):
                 dec_data.append(data[i + j])
                 written += 1
         i += chunk_len
-    return dec_data
+    return bytes(dec_data)
 
 
 if __name__ == '__main__':
